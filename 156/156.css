@@ -1,0 +1,203 @@
+* {
+    /* 初始�?*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    align-items: center;
+    width: 100vw;
+    max-width: 1150px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.card {
+    /* 弹性布局 垂直居中 */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    padding-left: 30px;
+    /* 绝对定位 */
+    position: absolute;
+    /* 溢出隐藏 */
+    overflow: hidden;
+}
+
+.card .img {
+    width: 260px;
+    height: 260px;
+    border-radius: 20px;
+    overflow: hidden;
+    /* 防止被挤�?*/
+    flex-shrink: 0;
+    box-shadow: 0 5px 8px rgba(76, 76, 76, 0.2);
+
+}
+
+.card .img img {
+    width: 100%;
+    height: 100%;
+    /* 图片默认隐藏 */
+    opacity: 0;
+    /* 过渡效果 */
+    transition: 0.6s;
+}
+
+/* 通过单选框的checked来显示指定图�?*/
+/* ~是兄弟选择�?*/
+#slide_1:checked~.card-1 img,
+#slide_2:checked~.card-2 img,
+#slide_3:checked~.card-3 img,
+#slide_4:checked~.card-4 img,
+#slide_5:checked~.card-5 img,
+#slide_6:checked~.card-6 img,
+#slide_7:checked~.card-7 img,
+#slide_8:checked~.card-8 img,
+#slide_9:checked~.card-9 img,
+#slide_10:checked~.card-10 img,
+#slide_11:checked~.card-11 img,
+#slide_12:checked~.card-12 img,
+#slide_13:checked~.card-13 img,
+#slide_14:checked~.card-14 img,
+#slide_15:checked~.card-15 img,
+#slide_16:checked~.card-16 img,
+#slide_17:checked~.card-17 img,
+#slide_18:checked~.card-18 img,
+#slide_19:checked~.card-19 img,
+#slide_20:checked~.card-20 img {
+    /* 图片显示 */
+    opacity: 1;
+    /* 过渡延迟 */
+    transition-delay: 0.2s;
+}
+
+.card .content {
+    flex: 1;
+    padding: 0 30px 0 35px;
+    position: relative;
+    /* 默认偏右一�?*/
+    left: 50px;
+    /* 文本内容默认隐藏 */
+    opacity: 0;
+    /* 过渡效果 */
+    transition: 0.6s;
+}
+
+/* 通过单选框的checked来显示指定文本内�?*/
+#slide_1:checked~.card-1 .content,
+#slide_2:checked~.card-2 .content,
+#slide_3:checked~.card-3 .content,
+#slide_4:checked~.card-4 .content,
+#slide_5:checked~.card-5 .content,
+#slide_6:checked~.card-6 .content,
+#slide_7:checked~.card-7 .content,
+#slide_8:checked~.card-8 .content,
+#slide_9:checked~.card-9 .content,
+#slide_10:checked~.card-10 .content,
+#slide_11:checked~.card-11 .content,
+#slide_12:checked~.card-12 .content,
+#slide_13:checked~.card-13 .content,
+#slide_14:checked~.card-14 .content,
+#slide_15:checked~.card-15 .content,
+#slide_16:checked~.card-16 .content,
+#slide_17:checked~.card-17 .content,
+#slide_18:checked~.card-18 .content,
+#slide_19:checked~.card-19 .content,
+#slide_20:checked~.card-20 .content {
+    opacity: 1;
+    z-index: 9;
+    left: 0;
+    transition-delay: 0.3s;
+}
+
+.card .title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.card .text {
+    font-size: 17px;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.card a {
+    padding: 13px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
+    float: right;
+}
+
+/* 指示�?*/
+.slider {
+    position: absolute;
+    bottom: 25px;
+    left: 55%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider .slide {
+    width: 38px;
+    height: 10px;
+    background-color: #dfdfdf;
+    display: inline-flex;
+    margin: 0 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 指示器的黑色进度�?*/
+.slider .slide::before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color: #000;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.6s;
+}
+
+/* 通过单选框的checked来显示指定指示器的黑色进度条 */
+#slide_1:checked~.slider .slide-1::before,
+#slide_2:checked~.slider .slide-2::before,
+#slide_3:checked~.slider .slide-3::before,
+#slide_4:checked~.slider .slide-4::before,
+#slide_5:checked~.slider .slide-5::before,
+#slide_6:checked~.slider .slide-6::before,
+#slide_7:checked~.slider .slide-7::before,
+#slide_8:checked~.slider .slide-8::before,
+#slide_9:checked~.slider .slide-9::before,
+#slide_10:checked~.slider .slide-10::before,
+#slide_11:checked~.slider .slide-11::before,
+#slide_12:checked~.slider .slide-12::before,
+#slide_13:checked~.slider .slide-13::before,
+#slide_14:checked~.slider .slide-14::before,
+#slide_15:checked~.slider .slide-15::before,
+#slide_16:checked~.slider .slide-16::before,
+#slide_17:checked~.slider .slide-17::before,
+#slide_18:checked~.slider .slide-18::before,
+#slide_19:checked~.slider .slide-19::before,
+#slide_20:checked~.slider .slide-20::before {
+    width: 100%;
+    transform: scaleX(1);
+}
