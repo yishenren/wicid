@@ -1,0 +1,1105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    line-height: 1.7;
+    position: relative;
+    background-color: #000;
+    height: 100vh;
+}
+
+.game {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: #fff;
+    width: 1400px;
+    height: 850px;
+    border-radius: 28px;
+    box-shadow: 0px 56px 72px -30px rgba(50, 55, 63, 0.46);
+    padding: 20px;
+}
+
+.game img {
+    position: absolute;
+    height: 450px;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%);
+}
+
+.game .menu,
+.game .profile {
+    position: absolute;
+    font-size: 24px;
+    top: 30px;
+}
+
+.game .menu {
+    left: -100px;
+}
+
+.game .profile {
+    right: -100px;
+}
+
+.game h1 {
+    position: absolute;
+    bottom: -25%;
+    left: 50%;
+    font-size: 50px;
+    transform: translate(-50%);
+    width: 100%;
+    text-align: center;
+    color: #313942;
+}
+
+.game p {
+    width: 260px;
+    font-size: 14px;
+    line-height: 2.4;
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    color: #535c68;
+    font-weight: 600;
+}
+
+.game .buy {
+    background-color: #17202c;
+    width: 50px;
+    height: 50px;
+    border-radius: 1000px;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+
+.game .buy i {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.game .back-button {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.473);
+    position: absolute;
+    left: 35px;
+    bottom: -25%;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.game .car-final {
+    position: absolute;
+    height: 100px;
+    left: 200%;
+    top: 10%;
+    transform: translate(-50%);
+}
+
+.game .bg1 {
+    z-index: -2;
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+    width: 100%;
+}
+
+.game .bg2 {
+
+    z-index: -2;
+    position: absolute;
+    height: 860px;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%);
+    opacity: 0;
+    width: 100%;
+}
+
+.game .bg3 {
+
+    z-index: -2;
+    position: absolute;
+    height: 860px;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%);
+    opacity: 0;
+    width: 100%;
+}
+
+.game .bg4 {
+
+    z-index: -2;
+    position: absolute;
+    height: 860px;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%);
+    opacity: 0;
+    width: 100%;
+}
+
+.game .bg5 {
+
+    z-index: -2;
+    position: absolute;
+    height: 860px;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%);
+    opacity: 0;
+    width: 100%;
+}
+
+.game .bg6 {
+
+    z-index: -2;
+    position: absolute;
+    height: 860px;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%);
+    opacity: 0;
+    width: 100%;
+}
+
+.game .bg7 {
+
+    z-index: -2;
+    position: absolute;
+    height: 860px;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%);
+    opacity: 0;
+    width: 100%;
+}
+
+.game .bg8 {
+
+    z-index: -2;
+    position: absolute;
+    height: 860px;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%);
+    opacity: 0;
+    width: 100%;
+}
+
+.game .bg9 {
+
+    z-index: -2;
+    position: absolute;
+    height: 860px;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%);
+    opacity: 0;
+    width: 100%;
+}
+
+.game .bg10 {
+
+    z-index: -2;
+    position: absolute;
+    height: 860px;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%);
+    opacity: 0;
+    width: 100%;
+}
+
+.game .bg11 {
+
+    z-index: -2;
+    position: absolute;
+    height: 860px;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%);
+    opacity: 0;
+    width: 100%;
+}
+
+.game .bg12 {
+
+    z-index: -2;
+    position: absolute;
+    height: 860px;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%);
+    opacity: 0;
+    width: 100%;
+}
+
+.game .lh {
+
+    z-index: -2;
+    position: absolute;
+    height: 860px;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%);
+    opacity: 0;
+    width: 100%;
+}
+
+.game .lh2 {
+
+    z-index: -2;
+    position: absolute;
+    height: 860px;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%);
+    opacity: 0;
+    width: 100%;
+}
+
+.game .dianji {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji2 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji3 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji4 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji5 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji6 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji7 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji8 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji9 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji10 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji11 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji12 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji13 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji14 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji15 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji16 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji17 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji18 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji19 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji20 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji21 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji22 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji23 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji24 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji25 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji26 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji27 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji28 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji29 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji30 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji31 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji32 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji33 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .dianji34 {
+    position: absolute;
+    height: 860px;
+    left: 200%;
+    top: 0%;
+    transform: translate(-50%);
+
+}
+
+.game .duihuakuang {
+    z-index: -1;
+    position: absolute;
+    height: 250px;
+    left: 200%;
+    top: 65%;
+    opacity: 0;
+    transform: translate(-50%);
+}
+
+.game h2 {
+    position: absolute;
+    font-size: 30px;
+    top: 68%;
+    left: -60%;
+    transform: translate(-50%);
+    width: 100%;
+    color: #FFF;
+}
+
+.game h3 {
+    position: absolute;
+    font-size: 30px;
+    top: 68%;
+    left: -60%;
+    transform: translate(-50%);
+    width: 100%;
+    color: #FFF;
+}
+
+.game .name {
+    position: absolute;
+    font-size: 30px;
+    top: 68%;
+    left: -60%;
+    transform: translate(-50%);
+    width: 100%;
+    color: #FFF;
+    opacity: 0;
+}
+
+.game .name2 {
+    position: absolute;
+    font-size: 30px;
+    top: 68%;
+    left: -60%;
+    transform: translate(-50%);
+    width: 100%;
+    color: #FFF;
+    opacity: 0;
+}
+
+.game .name3 {
+    position: absolute;
+    font-size: 30px;
+    top: 68%;
+    left: -60%;
+    transform: translate(-50%);
+    width: 100%;
+    color: #FFF;
+    opacity: 0;
+}
+
+.game .summary {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: -52%;
+    transform: translate(-50%);
+    width: 83%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 1;
+}
+
+.game .summary-2 {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: 55%;
+    transform: translate(-50%);
+    width: 83%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-3 {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: 55%;
+    transform: translate(-50%);
+    width: 83%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-4 {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: 55%;
+    transform: translate(-50%);
+    width: 83%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-5 {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: 55%;
+    transform: translate(-50%);
+    width: 83%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-6 {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: 55%;
+    transform: translate(-50%);
+    width: 83%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-7 {
+    position: absolute;
+    font-size: 24px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 60%;
+    color: #000000;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-8 {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 83%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-9 {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: 55%;
+    transform: translate(-50%);
+    width: 83%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+
+
+}
+
+.game .summary-10 {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: 55%;
+    transform: translate(-50%);
+    width: 83%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-11 {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: 55%;
+    transform: translate(-50%);
+    width: 83%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-12 {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: 55%;
+    transform: translate(-50%);
+    width: 83%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-13 {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: 55%;
+    transform: translate(-50%);
+    width: 83%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-14 {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: 55%;
+    transform: translate(-50%);
+    width: 83%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-15 {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: 55%;
+    transform: translate(-50%);
+    width: 83%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-16 {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: 55%;
+    transform: translate(-50%);
+    width: 83%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-17 {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: 55%;
+    transform: translate(-50%);
+    width: 83%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-18 {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: 55%;
+    transform: translate(-50%);
+    width: 83%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-18-5 {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: 55%;
+    transform: translate(-50%);
+    width: 83%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-19 {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-20 {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: 55%;
+    transform: translate(-50%);
+    width: 83%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-21 {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: 55%;
+    transform: translate(-50%);
+    width: 83%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-22 {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 83%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-23 {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-24 {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-25 {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: 55%;
+    transform: translate(-50%);
+    width: 83%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-25-5 {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 70%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-26 {
+    position: absolute;
+    font-size: 24px;
+    top: 75%;
+    left: 55%;
+    transform: translate(-50%);
+    width: 83%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-27 {
+    position: absolute;
+    font-size: 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 40%;
+    color: #ffffff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-28 {
+    position: absolute;
+    font-size: 35px;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%);
+    width: 40%;
+    color: #ffffff;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-29 {
+    position: absolute;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 83%;
+    color: #000000;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-30 {
+    position: absolute;
+    font-size: 24px;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%);
+    width: 83%;
+    color: #000000;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.game .summary-31 {
+    position: absolute;
+    font-size: 24px;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%);
+    width: 83%;
+    color: #000000;
+    font-weight: 600;
+    opacity: 0;
+}
+
+
+.game .xz1-1 {
+    position: absolute;
+    font-size: 24px;
+    transform: translate(-50%);
+    color: #fff;
+    font-weight: 600;
+    height: 50px;
+    top: 35%;
+    left: 30%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.game .xz1-2 {
+    position: absolute;
+    font-size: 24px;
+    transform: translate(-50%);
+    color: #fff;
+    font-weight: 600;
+    height: 50px;
+    top: 45%;
+    left: 30%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.game .xz1-3 {
+    position: absolute;
+    font-size: 24px;
+    transform: translate(-50%);
+    color: #fff;
+    font-weight: 600;
+    height: 50px;
+    top: 35%;
+    left: 60%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.game .xz1-4 {
+    position: absolute;
+    font-size: 24px;
+    transform: translate(-50%);
+    color: #fff;
+    font-weight: 600;
+    height: 50px;
+    top: 45%;
+    left: 60%;
+    opacity: 0;
+    pointer-events: none;
+}
